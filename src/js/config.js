@@ -8,6 +8,10 @@ function config ($stateProvider, $urlRouterProvider) {
     .state('root.home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html'
+    })
+    .state('root.add', {
+      url: '/add',
+      templateUrl: 'templates/add.tpl.html'
     });
 
   $urlRouterProvider.otherwise('/');
