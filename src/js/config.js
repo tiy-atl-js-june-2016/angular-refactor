@@ -11,7 +11,8 @@ function config ($stateProvider, $urlRouterProvider) {
     })
     .state('root.add', {
       url: '/add',
-      templateUrl: 'templates/add.tpl.html'
+      templateUrl: 'templates/add.tpl.html',
+      controller: 'AddController as vm'
     });
 
   $urlRouterProvider.otherwise('/');
