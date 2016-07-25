@@ -1,16 +1,16 @@
-function AddController ($http, SERVER) {
+function AddController (GifService, $state) {
 
   let vm = this;
 
   vm.addGif = addGif;
 
   function addGif (gif) {
-    $http.post(SERVER.URL, gif).then( (res) => {
-      console.log(res);
+    GifService.createGif(gif).then( (res) => {
+      $state.go('root.home');
     });
   };
 
 }
 
-AddController.$inject = ['$http', 'SERVER'];
+AddController.$inject = ['GifService', '$state'];
 export { AddController };
