@@ -1,0 +1,16 @@
+<h1 class="title">Home Page</h1>
+
+<div class="card" ng-repeat="gif in gifs">
+  <a href="/#/gif/{{ gif._id }}">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img ng-src="{{ gif.url }}" alt="{{ gif.name }}">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="media">
+        <p class="title is-5">{{ gif.name }}</p>
+      </div>
+    </div>
+  </a>
+</div>
