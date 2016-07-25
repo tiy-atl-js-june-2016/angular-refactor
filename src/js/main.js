@@ -9,6 +9,7 @@ import { serverConstant } from './server.constant';
 import { HomeController }   from './controllers/home.controller';
 import { AddController }    from './controllers/add.controller';
 import { SingleController } from './controllers/single.controller';
+import { LayoutController } from './controllers/layout.controller';
 
 // Import our services
 import { GifService } from './services/gif.service';
@@ -20,4 +21,5 @@ angular
   .controller('HomeController', HomeController)
   .controller('AddController', AddController)
   .controller('SingleController', SingleController)
+  .controller('LayoutController', LayoutController)
   .service('GifService', GifService);
